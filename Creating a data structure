@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+
+struct Attributes
+{
+   int genotype;
+   char bloodgroup[30],haircolour[30],eyecolour[20];
+   };
+   
+   void main()
+   {
+     struct Attributes *ptr;
+     ptr=(struct Attributes*)malloc(sizeof(struct Attributes));
+     
+     printf("Enter genotype: ");
+     scanf("%d",&ptr->genotype);
+     printf("Enter bloodgroup: ";
+     scanf("%s", ptr->bloodgroup);
+     
+     printf("Enter haircolour: ");
+     scanf("%s", ptr->haircolour);
+     
+     printf("Enter eyecolour: ");
+     scanf("%s", ptr->eyecolour);
+     
+     printf("Your attributes: ");
+     printf(%d, %s, %s, %s", ptr->genotype,ptr->bloodgroup,ptr->haircolour,ptr->eyecolour);
+     getch();
+   }
